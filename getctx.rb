@@ -5,21 +5,21 @@
 class Getctx < Formula
   desc "A CLI tool to consolidate source code into a single context file."
   homepage "https://github.com/kacperzielinskidev/getctx"
-  version "1.0.1"
+  version "1.0.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kacperzielinskidev/getctx/releases/download/v1.0.1/getctx_1.0.1_darwin_amd64.tar.gz"
-      sha256 "e9c1e4ba3bc36b8751acd065f9ee5c70aadf2dfb30fbee9fc9b666a0e41c832c"
+      url "https://github.com/kacperzielinskidev/getctx/releases/download/v1.0.0/getctx_1.0.0_darwin_amd64.tar.gz"
+      sha256 "29ad8241e5515f5d64a045d473840ada3371514d74cc1d3948fb64cb5d981370"
 
       def install
         bin.install "getctx"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kacperzielinskidev/getctx/releases/download/v1.0.1/getctx_1.0.1_darwin_arm64.tar.gz"
-      sha256 "4a30b247271b738241e3dc7d33917df832671f75c4ab6b3472aebe9a543d9cf5"
+      url "https://github.com/kacperzielinskidev/getctx/releases/download/v1.0.0/getctx_1.0.0_darwin_arm64.tar.gz"
+      sha256 "d13b6c29e758611250b246eab130f83e2a764445acb90fc1df3244b5a95119b8"
 
       def install
         bin.install "getctx"
@@ -29,15 +29,15 @@ class Getctx < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kacperzielinskidev/getctx/releases/download/v1.0.1/getctx_1.0.1_linux_amd64.tar.gz"
-      sha256 "8b1f30233e097566f5d13416f365663561f1ffad98c3639754d4ae0e4ccb8518"
+      url "https://github.com/kacperzielinskidev/getctx/releases/download/v1.0.0/getctx_1.0.0_linux_amd64.tar.gz"
+      sha256 "6cf7c7fb515b086a02a6116aa3ded2628272967877879a4aa315460ddcbc60cd"
       def install
         bin.install "getctx"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kacperzielinskidev/getctx/releases/download/v1.0.1/getctx_1.0.1_linux_arm64.tar.gz"
-      sha256 "1b409b18e0e86dffe57e37761a822a9a372b57a3941ab4672f4efa456bda15b9"
+      url "https://github.com/kacperzielinskidev/getctx/releases/download/v1.0.0/getctx_1.0.0_linux_arm64.tar.gz"
+      sha256 "fa780d47bc86cddfe31d5ee8c669bf319172d86e626a1617d9a1f00518c4dd82"
       def install
         bin.install "getctx"
       end
